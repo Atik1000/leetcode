@@ -1,11 +1,26 @@
 package main
 
 import "fmt"
-func loop() {
-	for i := 0; i < 10; i++ {
-		fmt.Println(i)
-	}
-}
+
 func main() {
-	loop()
+	i := 1
+	for i <= 3 {
+		fmt.Println(i)
+		i += 1
+	}
+	
+	for j := 1; j <= 9; j++ {
+		fmt.Println(j)
+	}
+	for {
+		fmt.Println("loop")
+		break
+	}
+	for n := 0; n <= 5; n++ {
+		if n%2 == 0 {
+			continue
+		}
+		fmt.Println(n)
+	}
+
 }
